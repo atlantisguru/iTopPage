@@ -1,4 +1,4 @@
-iTopPage plugin for jQuery
+﻿iTopPage plugin for jQuery
 ==========================
 Q: Why iTopPage?
 A: Imageless "Top of the page" plugin for jQuery
@@ -29,7 +29,7 @@ ToDo:
 =====
 
 * optional color change both the button and arrow from parameters
-* optional image for "top of the page" button from parameters
+* optional external image for "top of the page" button from parameters
 * optional changing the position of the button for example bottomLeft, bottomRight...
 
 Version:
