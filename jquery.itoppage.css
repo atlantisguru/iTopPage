@@ -8,7 +8,6 @@
     width: 50px;
     height: 50px;
     z-index: 999999;
-	color: #FFFFFF;
     background: rgb(63,63,68); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(63,63,68,1) 1%, rgba(37,40,39,1) 49%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(63,63,68,1)), color-stop(49%,rgba(37,40,39,1)), color-stop(51%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1))); /* Chrome,Safari4+ */
@@ -32,6 +31,9 @@
     padding: 0px;
     margin: 8px;
     font-size: 25pt;
-	text-align: center;
+    color: #DDDDDD;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-shadow: -1px -1px 0 #777777;
+    text-align: center;
 	vertical-align: middle;    
 }
