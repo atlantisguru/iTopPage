@@ -30,16 +30,14 @@ Usage
 ToDo:
 =====
 
-* optional external image for "top of the page" button from parameters
+* optional image for "top of the page" button from parameters
 * optional changing the position of the button for example bottomLeft, bottomRight...
 
 Version:
 ========		
-1.1.2 (2013.01.22)
+1.1.2 (2013.01.21)
 * Can change gradient color of the button (black, red, orange, pink, blue, green)
-
 * Button position stabilized (absolute->fixed)
-* Code optimized
 
 1.0.0 (2013.01.21)
  		
