@@ -1,0 +1,35 @@
+{
+  "name": "iTopPage",
+  "title": "imageless 'Top of the Page' plugin for jQuery",
+  "description": "Showing a black gradient box with a white arrow from a specified point, when user scrolling down to the bottom of the page.",
+  "keywords": [
+    "top",
+    "page",
+    "imageless",
+    "button"
+  ],
+  "version": "1.0",
+  "author": {
+    "name": "Bubori Attila",
+    "url": "https://github.com/atlantisguru/iTopPage"
+  },
+  "maintainers": [
+    {
+      "name": "Bubori Attila",
+      "email": "bubori.attila@gmail.com",
+      "url": "https://github.com/atlantisguru"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "GPLv2",
+      "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+    }
+  ],
+  "homepage": "https://github.com/atlantisguru/iTopPage",
+  "docs": "https://github.com/atlantisguru/iTopPage",
+  "download": "https://github.com/atlantisguru/iTopPage/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.2"
+  }
+}
