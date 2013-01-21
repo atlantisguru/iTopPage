@@ -7,9 +7,8 @@ Showing a black gradient box with a white arrow from a specified point,
 when user scrolling down to the bottom of the page.
 
 Parameters:
-===========
-* startPosition: 100  	<i>//Position from top of the window (in pixels)</i>
-* title: 'Scroll to Top'	<i>//Mouse hover title attribute text</i>
+	startPosition: 100  	<i>//Position from top of the window (in pixels)</i>
+	title: 'Scroll to Top'	<i>//Mouse hover title attribute text</i>
  
 Must be use the jquery.itoppage.css file to format the button!
 
