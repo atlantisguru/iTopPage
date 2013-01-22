@@ -36,38 +36,49 @@
 <p>Q: Why iTopPage?
 A: Imageless "Top of the page" plugin for jQuery</p>
 
-<p>Showing a black gradient box with a white arrow from a specified point,
+<p>Showing a colored gradient box with a white arrow from a specified point,
 when user scrolling down to the bottom of the page.</p>
 
-<p>Parameters:
-    startPosition: 100      <i>//Position from top of the window (in pixels)</i>
-    title: 'Scroll to Top'  <i>//Mouse hover title attribute text</i></p>
+<h1>Parameters:</h1>
 
-<p>Must be use the jquery.itoppage.css file to format the button!</p>
+<ul>
+<li>startPosition: 100        //Position from top of the window (in pixels)</li>
+<li>title: 'Scroll to Top'    //Mouse hover title attribute text</li>
+<li>color: 'red'              //black(default),red,pink,blue,orange,green</li>
+<li>place: 'bottomRight'      //Position of the button: bottomLeft, bottomCenter, bottomRight(default)</li>
+</ul><p>Must be use the jquery.itoppage.css file to format the button!</p>
 
 <h1>Usage</h1>
 
 <pre><code>    $(document).ready(function() {
-        $(document).iTopPage();
+        $().iTopPage();
     });
 
     //or with parameters
 
 
     $(document).ready(function() {
-        $(document).iTopPage({startPosition: 100, title: "Oldal tetejére"});
+        $().iTopPage({startPosition: 100, title: "Oldal tetejére"});
     });
 </code></pre>
 
 <h1>ToDo:</h1>
 
 <ul>
-<li>optional color change both the button and arrow from parameters</li>
 <li>optional external image for "top of the page" button from parameters</li>
-<li>optional changing the position of the button for example bottomLeft, bottomRight...</li>
 </ul><h1>Version:</h1>
 
-<p>1.0 (2013.01.21)</p>
+<p>1.2.2 (2013.01.22)</p>
+
+<ul>
+<li>Can change the position of the button (bottomLeft, bottomCenter, bottomRight)</li>
+</ul><p>1.1.2 (2013.01.22)</p>
+
+<ul>
+<li><p>Can change gradient color of the button (black, red, orange, pink, blue, green)</p></li>
+<li><p>Button position stabilized (absolute-&gt;fixed)</p></li>
+<li><p>Code optimized</p></li>
+</ul><p>1.0.0 (2013.01.21)</p>
 
 <h1>License:</h1>
 
