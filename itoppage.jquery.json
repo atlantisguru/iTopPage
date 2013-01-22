@@ -1,5 +1,5 @@
 {
-  "name": "iTopPage",
+  "name": "itoppage",
   "title": "iTopPage - imageless 'Top of the Page' plugin for jQuery",
   "description": "Showing a colored gradient box with a white arrow from a specified point, when user scrolling down to the bottom of the page.",
   "keywords": [
