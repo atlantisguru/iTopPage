@@ -3,7 +3,7 @@ iTopPage plugin for jQuery
 Q: Why iTopPage?
 A: Imageless "Top of the page" plugin for jQuery
 
-Showing a black gradient box with a white arrow from a specified point,
+Showing a colored gradient box with a white arrow from a specified point,
 when user scrolling down to the bottom of the page.
 
 Parameters:
@@ -11,7 +11,8 @@ Parameters:
 * startPosition: 100  		//Position from top of the window (in pixels)
 * title: 'Scroll to Top'	//Mouse hover title attribute text
 * color: 'red'				//black(default),red,pink,blue,orange,green
- 
+* place: 'bottomRight'		//Position of the button: bottomLeft, bottomCenter, bottomRight(default)
+
 Must be use the jquery.itoppage.css file to format the button!
 
 Usage
@@ -30,14 +31,18 @@ Usage
 ToDo:
 =====
 
-* optional image for "top of the page" button from parameters
-* optional changing the position of the button for example bottomLeft, bottomRight...
+* optional external image for "top of the page" button from parameters
 
 Version:
-========		
-1.1.2 (2013.01.21)
+========
+1.2.2 (2013.01.22)
+* Can change the position of the button (bottomLeft, bottomCenter, bottomRight)
+		
+1.1.2 (2013.01.22)
 * Can change gradient color of the button (black, red, orange, pink, blue, green)
+
 * Button position stabilized (absolute->fixed)
+* Code optimized
 
 1.0.0 (2013.01.21)
  		
