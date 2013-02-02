@@ -14,6 +14,7 @@
  * 					title: 'Scroll to Top'	//Mouse hover title attribute text
  * 					color: 'red'			//black(default),red,pink,blue,orange,green
  * 					place: 'bottomRight'	//Position of the button: bottomLeft, bottomCenter, bottomRight(default)
+ * 					picture: 'toparrow.png'	//Relative or absolute path of an image (jpg,png,gif,jpeg) default: null (imageless mode)
  * 
  * 				Must be use the jquery.itoppage.css file to format the button!
  * 
@@ -37,13 +38,17 @@
 				startPosition: 100,
 				title: 'Scroll to Top',
 				color: 'black',
-				place: 'bottomRight'
+				place: 'bottomRight',
+				picture: null
 			};
         	
         	var options = $.extend({}, defaults, options);
         	
-        	$("body").append("<div id='iTopPage' title='" + options.title + "'><p id='arrow'>&#9650;</p></div>");
-            
+        	if (options.picture == null) {
+        		$("body").append("<div id='iTopPage' class='iTopPage' title='" + options.title + "'><p id='arrow'>&#9650;</p></div>");
+          	} else {
+          		$("body").append("<div id='iTopPage' title='" + options.title + "'><image src='" + options.picture + "'></div>");
+          	}
             var $iTopPage = $("#iTopPage");
             var leftPoisition;
             

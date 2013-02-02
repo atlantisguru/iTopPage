@@ -1,4 +1,4 @@
-iTopPage plugin for jQuery
+﻿iTopPage plugin for jQuery
 ==========================
 Q: Why iTopPage?
 A: Imageless "Top of the page" plugin for jQuery
@@ -12,6 +12,7 @@ Parameters:
 * title: 'Scroll to Top'	//Mouse hover title attribute text
 * color: 'red'				//black(default),red,pink,blue,orange,green
 * place: 'bottomRight'		//Position of the button: bottomLeft, bottomCenter, bottomRight(default)
+* picture: 'toparrow.png'	//Relative or absolute path of an image (jpg,png,gif,jpeg) default: null (imageless mode)
 
 Must be use the jquery.itoppage.css file to format the button!
 
@@ -23,18 +24,15 @@ Usage
   		
  		//or with parameters
  		
- 		
   		$(document).ready(function() {
   			$().iTopPage({startPosition: 100, title: "Oldal tetejére"});
   		});
 
-ToDo:
-=====
-
-* optional external image for "top of the page" button from parameters
-
 Version:
 ========
+1.3.2 (2013.02.02)
+* Can use imageless mode or an external image to the top page button
+		
 1.2.2 (2013.01.22)
 * Can change the position of the button (bottomLeft, bottomCenter, bottomRight)
 		

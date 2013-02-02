@@ -1,7 +1,7 @@
 /*
  * Name:		iTopPage
  * Title:		Imageless "Top of the page" plugin for jQuery
- * Version:		1.2.2
+ * Version:		1.3.2
  * Author:		Bubori Attila
  * License:		GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
  * Contact:		bubori.attila@gmail.com
@@ -14,6 +14,7 @@
  * 					title: 'Scroll to Top'	//Mouse hover title attribute text
  * 					color: 'red'			//black(default),red,pink,blue,orange,green
  * 					place: 'bottomRight'	//Position of the button: bottomLeft, bottomCenter, bottomRight(default)
+ * 					picture: 'toparrow.png'	//Relative or absolute path of an image (jpg,png,gif,jpeg) default: null (imageless mode)					
  * 
  * 				Must be use the jquery.itoppage.css file to format the button!
  * 
@@ -37,17 +38,23 @@
 				startPosition: 100,
 				title: 'Scroll to Top',
 				color: 'black',
-				place: 'bottomRight'
+				place: 'bottomRight',
+				picture: null
 			};
         	
         	var options = $.extend({}, defaults, options);
         	
-        	$("body").append("<div id='iTopPage' title='" + options.title + "'><p id='arrow'>&#9650;</p></div>");
-            
-            var $iTopPage = $("#iTopPage");
+        	$("body").append("<div id='iTopPage' title='" + options.title + "'></div>");
+          	
+        	var $iTopPage = $("#iTopPage");
             var leftPoisition;
             
-            $iTopPage.addClass(options.color)
+            if (options.picture == null) {
+            	$iTopPage.html("<p id='arrow'>&#9650;</p>");
+          		$iTopPage.addClass(options.color + ' iTopPage glassBorder');
+          	} else {
+          		$iTopPage.html("<image src='" + options.picture + "'>");
+          	}
             
             function leftPositionCalculate() {
             	switch (options.place) {
