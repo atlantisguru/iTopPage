@@ -1,7 +1,7 @@
 {
   "name": "itoppage",
-  "title": "iTopPage - imageless 'Top of the Page' plugin for jQuery",
-  "description": "Showing a colored gradient box with a white arrow from a specified point, when user scrolling down to the bottom of the page.",
+  "title": "iTopPage",
+  "description": "Showing a colored gradient box with a white arrow (or an external image) from a specified point, when user scrolling down to the bottom of the page.",
   "keywords": [
     "top",
     "page",
@@ -11,7 +11,8 @@
   "version": "1.3.2",
   "author": {
     "name": "Bubori Attila",
-    "url": "https://github.com/atlantisguru/iTopPage"
+    "email": "bubori.attila@gmail.com",
+    "url": "https://github.com/atlantisguru"
   },
   "maintainers": [
     {
@@ -27,9 +28,10 @@
     }
   ],
   "homepage": "http://atlantisguru.github.com/iTopPage",
-  "docs": "https://github.com/atlantisguru/iTopPage",
+  "docs": "https://github.com/atlantisguru/iTopPage#readme",
+  "demo": "http://www.jquery-plugins.hu/demo/113/itoppage.html",
   "download": "https://github.com/atlantisguru/iTopPage/archive/master.zip",
   "dependencies": {
-    "jquery": ">=1.6.2"
+    "jquery": ">=1.6"
   }
 }
